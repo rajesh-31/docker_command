@@ -1,0 +1,5 @@
+docker build -t .  (build the image)
+docker images  (show the images)
+docker image rm (remove the image)
+docker ps  (show the running container)
+docker ps -a (show the all running or stop container)
