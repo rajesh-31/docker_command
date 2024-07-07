@@ -8,3 +8,6 @@ ip a s (show the all ip address)
 hostname -i (show inside the container ip address)
 docker network create [nw_name] --driver bridge (create your own bridgr network)
 docker network connect [nw_name] [container_name] (attached new network to container)
+sudo usermod -aG ubuntu docker (permission to docker root user)
+docker volume create [volume_name] (create a new volume)
+
