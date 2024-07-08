@@ -10,4 +10,4 @@ docker network create [nw_name] --driver bridge (create your own bridgr network)
 docker network connect [nw_name] [container_name] (attached new network to container)
 sudo usermod -aG ubuntu docker (permission to docker root user)
 docker volume create [volume_name] (create a new volume)
-
+docker-compose -f [yml filename] up -d (run the specific yml file)
