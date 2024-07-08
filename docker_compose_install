@@ -1,0 +1,11 @@
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo journalctl -u docker.service
+sudo journalctl -u docker.service
+sudo usermod -aG docker $USER
+ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 Jun  1 12:34 /var/run/docker.sock
+sudo chown root:docker /var/run/docker.sock
+sudo chmod 660 /var/run/docker.sock
+sudo systemctl restart docker
+reboot the system
